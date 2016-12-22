@@ -17,4 +17,4 @@ export const changedWPM = (value) => {
 
 export const play = () => {
   return { type: actionTypes.PLAY };
-}
+};

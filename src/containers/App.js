@@ -5,8 +5,8 @@ import { connect } from 'react-redux';
 
 import '../styles/App.css';
 import Actions from '../components/Actions';
-import InputArea from '../components/InputArea';
 import Reader from '../components/Reader';
+import InputArea from '../components/InputArea';
 import {
   changedText,
   changedWPM,
@@ -36,7 +36,11 @@ class App extends Component {
           <Reader parsedText={app.get('parsedText')} wpm={app.get('wpm')} />
         </div>
         <div>
-          <Actions boundActions={boundActions} wpmOptions={app.get('wpmOptions')} />
+          <Actions
+            boundActions={boundActions}
+            wpm={app.get('wpm')}
+            wpmOptions={app.get('wpmOptions')}
+            />
         </div>
         <div>
           <InputArea boundActions={boundActions} text={app.get('text')} />

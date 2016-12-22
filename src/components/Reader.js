@@ -81,7 +81,7 @@ export default class Reader extends Component {
 
     const stringToDisplay = parsedText.get(index);
     let interval = regularInterval;
-    if (['.', ',', '?'].indexOf(stringToDisplay.slice(-1)) !== -1) {
+    if (['.', ',', '?', ';', ':'].indexOf(stringToDisplay.slice(-1)) !== -1) {
       // word ends in punctiation that causes a pause
       interval = pauseInterval;
     }

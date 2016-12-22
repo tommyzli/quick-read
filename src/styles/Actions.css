@@ -1,0 +1,11 @@
+.actions >  * {
+    margin: 0 25px;
+    height: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #222;
+    background-color: #222;
+    color: white;
+}
